@@ -1,4 +1,5 @@
 from selenium import webdriver
+import time
 
 def test():
 	browser=webdriver.PhantomJS() # this will be the path to your webbrowser's WEBDRIVER
