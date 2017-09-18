@@ -4,6 +4,7 @@ python:
   - 2.7
 before_install:
   - sudo apt-get -qq update
+  - pwd
   - cd /tmp
   - wget https://github.com/aeberhardo/phantomjs-linux-armv6l/archive/master.zip
   - unzip master.zip
