@@ -10,7 +10,7 @@ before_install:
   - unzip master.zip
   - cd phantomjs-linux-armv6l-master
   - bunzip2 *.bz2 && tar xf *.tar
-  - cd ..
+  - cd /home//travis/build/gabru-md/facebook-login
 install: 
   - pip install selenium
 script: 
