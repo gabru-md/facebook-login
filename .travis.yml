@@ -14,4 +14,4 @@ before_install:
 install: 
   - pip install selenium
 script: 
-  - python facebook_login.py
+  - python facebook-login.py
