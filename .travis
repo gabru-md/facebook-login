@@ -1,0 +1,14 @@
+
+language: python
+python:
+  - 2.7
+before_install:
+  - sudo apt-get -qq update
+  - cd /tmp
+  - wget https://github.com/aeberhardo/phantomjs-linux-armv6l/archive/master.zip
+  - unzip master.zip
+  - cd phantomjs-linux-armv6l-master
+  - bunzip2 *.bz2 && tar xf *.tar
+install: "pip install -r requirements.txt"
+script: 
+  - python facebook_login.py
