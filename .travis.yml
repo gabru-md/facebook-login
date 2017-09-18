@@ -9,6 +9,7 @@ before_install:
   - unzip master.zip
   - cd phantomjs-linux-armv6l-master
   - bunzip2 *.bz2 && tar xf *.tar
-install: "pip install -r requirements.txt"
+install: 
+  - pip install selenium
 script: 
   - python facebook_login.py
