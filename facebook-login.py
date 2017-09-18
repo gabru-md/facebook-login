@@ -7,7 +7,7 @@ global username
 global pass1
 
 def fb_login(username, pass1):
-	browser=webdriver.Chrome("D:\chromedriver") # this will be the path to your webbrowser's WEBDRIVER
+	browser=webdriver.PhantomJS() # this will be the path to your webbrowser's WEBDRIVER
 	browser.get('http://facebook.com')
 	time.sleep(10)
 	#user credentials
@@ -17,12 +17,13 @@ def fb_login(username, pass1):
 	password.send_keys(str(pass1))
 	login = browser.find_element_by_css_selector('#loginbutton')
 	login.click()
+	print "Done"
 
 
 
 
-username = raw_input("Enter the Username: ")
-pass1 = raw_input("Enter the Pasword: ")
+username = "1234"
+pass1 = "1234"
 
 t1 = Thread(target=fb_login(username,pass1))
 
