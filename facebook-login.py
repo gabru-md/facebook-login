@@ -1,6 +1,6 @@
 from selenium import webdriver
 
-def test(username, pass1):
+def test():
 	browser=webdriver.PhantomJS() # this will be the path to your webbrowser's WEBDRIVER
 	browser.get('https://google.co.in')
 	time.sleep(10)
