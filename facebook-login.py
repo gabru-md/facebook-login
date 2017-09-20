@@ -6,7 +6,7 @@ def test():
 	browser.get('https://google.co.in')
 	time.sleep(10)
 	#user credentials
-	lst = browser.find_element_by_css_selector('#lst-ib')
+	#lst = browser.find_element_by_css_selector('#lst-ib')
 	print "Done"
 
 print "starting"
