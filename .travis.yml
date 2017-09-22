@@ -16,4 +16,4 @@ before_install:
 install: 
   - pip install selenium
 script: 
-  - phantomjs facebook-login.py
+  - python facebook-login.py
