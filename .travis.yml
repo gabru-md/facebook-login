@@ -1,19 +1,7 @@
-
-language: python
-python:
-  - 2.7
-before_install:
-  - sudo apt-get -qq update
-  - pwd
-  - cd /tmp
-  - wget https://github.com/aeberhardo/phantomjs-linux-armv6l/archive/master.zip
-  - unzip master.zip
-  - cd phantomjs-linux-armv6l-master
-  - bunzip2 *.bz2 && tar xf *.tar
-  - cd /home/travis/build/gabru-md/facebook-login
-  - "export DISPLAY=:99.0"
-  - "sh -e /etc/init.d/xvfb start"
+language: node_js
+node_js:
+ - "node"
 install: 
-  - pip install selenium
+  - npm install jshint --save-dev
 script: 
-  - python facebook-login.py
+  - npm test
